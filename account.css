@@ -135,9 +135,6 @@ body{
     margin-top: 38px;
     padding: 20px;
     margin-left: 250px;
-    background: url(background.png) no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 100vh;
     transition: 0.5s;
   }
