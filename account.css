@@ -132,7 +132,7 @@ body{
   
   .content{
     width: (100% - 250px);
-    margin-top: 60px;
+    margin-top: 38px;
     padding: 20px;
     margin-left: 250px;
     background: url(background.png) no-repeat;
@@ -177,6 +177,7 @@ body{
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
+    border-radius: 20px;
     border: none;
     background: #f1f1f1;
   }
@@ -200,9 +201,8 @@ body{
     margin: 8px 0;
     border: none;
     cursor: pointer;
+    border-radius: 20px;
     width: 100%;
-    opacity: 0.9;
-    border-radius: 4px;
     transition: 0.5s;
     float: none;
     display: flex;
@@ -211,7 +211,7 @@ body{
   }
   
   .registerbtn:hover {
-    opacity:1;
+    background-color: #0B87A6;
   }
   
   /* Add a blue text color to links */
