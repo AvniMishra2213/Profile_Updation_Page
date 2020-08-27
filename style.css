@@ -135,7 +135,7 @@ label #sidebar_btn:hover{
   margin-top: 30px;
   padding: 20px;
   margin-left: 250px;
-  height: 100vh;
+  /* height: 100vh; */
   transition: 0.5s;
 }
 
