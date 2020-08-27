@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+    <input type="checkbox" id="check"> -->
+
+    <!-- header area start -->
+    <header>
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        <div class="left_area">
+            <h3>EX<span>PLIFY</span></h3>
+        </div>
+        <div class="right_area">
+            <a href="#" class="logout_btn">Logout</a>
+        </div>
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+
+    <div class="mobile_nav">
+        <div class="nav_bar">
+            <img src="https://meetanentrepreneur.lu/wp-content/uploads/2019/08/profil-linkedin-300x300.jpg"
+                class="mobile_profile_image" alt="">
+            <i class="fa fa-bars nav_btn"></i>
+        </div>
+        <div class="mobile_nav_items">
+
+            <a href="./accountSettings.html"><i class="fas fa-desktop"></i><span>Account Settings</span></a>
+            <a href="#"><i class="fas fa-cogs"></i><span>Personal Settings</span></a>
+            <a href="#"><i class="fas fa-table"></i><span>Profile Picture</span></a>
+            <!-- <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+            <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+            <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a> -->
+
+        </div>
+    </div>
+    <!--sidebar start-->
+    <div class="sidebar">
+        <div class="profile_info">
+            <img src="https://meetanentrepreneur.lu/wp-content/uploads/2019/08/profil-linkedin-300x300.jpg"
+                class="profile_image" alt="">
+            <h4>Mohit Tiwari</h4>
+        </div>
+
+        <a href="./accountSettings.html"><i class="fas fa-desktop"></i><span>Account Settings</span></a>
+        <a href="#"><i class="fas fa-cogs"></i><span>Personal Settings</span></a>
+        <a href="#"><i class="fas fa-table"></i><span>Profile Picture</span></a>
+        <!-- <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+        <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+        <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a> -->
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+        <div class="card">
+            <div class="container">
+                <form action="#">
+                    <div class="row">
+                        <div class="col-25">
+                            <label class="la" for="fname"><b>First Name:</b></label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label class="la" for="lname"><b>Last Name:</b></label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label class="la" for="country"><b>Headline:</b></label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="headline" name="lastname" placeholder="Headline">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label class="la" for="subject"><b>Bio:</b></label>
+                        </div>
+                        <div class="col-75">
+                            <textarea class="textarea" id="subject" name="subject" placeholder="Write something.."
+                                style="height:100px"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="card" style="margin-top:20px ;">
+            <div class="container">
+                <form action=#>
+                    <div class="row">
+                        <div class="col-25">
+                            <label class="la" for="Git"><b>GitHub:</b></label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="Git" name="Git" placeholder="Profile Link">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label class="la" for="link"><b>LikedIn:</b></label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="link" name="link" placeholder="Profile Link">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label class="la" for="insta"><b>Instagram:</b></label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="insta" name="insta" placeholder="Profile Link">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <hr>
+        <button type="submit" class="registerbtn">Save</button>
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nav_btn').click(function () {
+                $('.mobile_nav_items').toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
